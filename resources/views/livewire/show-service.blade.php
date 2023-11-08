@@ -5,7 +5,7 @@
                 <div class="col-8 mx-auto text-center">
                 <h2 class="mb-3 text-capitalize">{{ $service->title}}</h2>
                     <ul class="list-inline breadcrumbs text-capitalize" style="font-weight:500">
-                        <li class="list-inline-item"><a wire:navigate href="{{route('home')}}">Home</a>
+                        <li class="list-inline-item"><a wire:navigate href="{{route('home')}}">Accueil</a>
                         </li>
                         <li class="list-inline-item">/ &nbsp; <a wire:navigate href="{{ route('servicesPage')}}">Services</a>
                         </li>

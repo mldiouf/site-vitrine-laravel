@@ -3,12 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 mx-auto text-center">
-                    <h2 class="mb-3 text-capitalize">Our Team</h2>
+                    <h2 class="mb-3 text-capitalize">
+                        Notre équipe</h2>
                     <ul class="list-inline breadcrumbs text-capitalize" style="font-weight:500">
-                        <li class="list-inline-item"><a wire:navigate href="{{route('home')}}">Home</a>
+                        <li class="list-inline-item"><a wire:navigate href="{{route('home')}}">Accueil</a>
                         </li>
-                        <li class="list-inline-item">/ &nbsp;Our Team
-                        </li>
+                        <li class="list-inline-item">/ &nbsp;
+                            Notre équipe
                     </ul>
                 </div>
             </div>
@@ -40,10 +41,10 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <p class="text-primary text-uppercase fw-bold mb-3">Questions You Have</p>
-                        <h1>People Behind Us</h1>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing . egestas
-                            <br>cursus pellentesque dignissim dui, congue. Vel etiam ut</p>
+                        <p class="text-primary text-uppercase fw-bold mb-3">Questions que vous avez</p>
+                        <h1>Les gens derrière nous</h1>
+                        <p class="mb-0">mldiouf est composée de jeunes developpeurs web et mobile
+                            <br>la creation est des contenues est plus qu'une métier mais notre passion</p>
                     </div>
                 </div>
             </div>

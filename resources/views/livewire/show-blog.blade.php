@@ -5,9 +5,9 @@
                 <div class="col-8 mx-auto text-center">
                     <h2 class="mb-3 text-capitalize">Blog</h2>
                     <ul class="list-inline breadcrumbs text-capitalize" style="font-weight:500">
-                        <li class="list-inline-item"><a href="{{route('home')}}">Home</a>
+                        <li class="list-inline-item"><a href="{{route('home')}}">Accueil</a>
                         </li>
-                        <li class="list-inline-item">/ &nbsp; Blog
+                        <li class="list-inline-item">/ &nbsp; Accueil
                         </li>
                     </ul>
                 </div>
@@ -69,7 +69,7 @@
                 <div class="col-lg-3">
                     <!-- categories -->
                     <div class="widget widget-categories">
-                        <h5 class="widget-title"><span>Category</span></h5>
+                        <h5 class="widget-title"><span>Catégorie</span></h5>
                         <ul class="list-unstyled widget-list">	
                             @if($categories->isNotEmpty())	
                             @foreach($categories as $category)	
@@ -83,17 +83,17 @@
                     <div class="widget widget-tags">
                         <h4 class="widget-title"><span>Tags</span></h4>
                         <ul class="list-inline widget-list widget-list-inline taxonomies-list">
-                            <li class="list-inline-item"><a href="#!">Booth</a>
+                            <li class="list-inline-item"><a href="#!">Stand</a>
                             </li>
-                            <li class="list-inline-item"><a href="#!">City</a>
+                            <li class="list-inline-item"><a href="#!">Ville</a>
                             </li>
                             <li class="list-inline-item"><a href="#!">Image</a>
                             </li>
-                            <li class="list-inline-item"><a href="#!">New</a>
+                            <li class="list-inline-item"><a href="#!">Nouveau</a>
                             </li>
                             <li class="list-inline-item"><a href="#!">Photo</a>
                             </li>
-                            <li class="list-inline-item"><a href="#!">Seasone</a>
+                            <li class="list-inline-item"><a href="#!">Saison</a>
                             </li>
                             <li class="list-inline-item"><a href="#!">Video</a>
                             </li>
@@ -101,7 +101,7 @@
                     </div>
                     <!-- latest post -->
                     <div class="widget">
-                        <h5 class="widget-title"><span>Latest Article</span></h5>
+                        <h5 class="widget-title"><span>Dernier article</span></h5>
                         <!-- post-item -->
                         @if($latestArticles->isNotEmpty())
                         @foreach($latestArticles as $latestArticle)
