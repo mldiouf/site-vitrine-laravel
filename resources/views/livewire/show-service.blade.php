@@ -3,11 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 mx-auto text-center">
-                    <h2 class="mb-3 text-capitalize">Our Services</h2>
+                <h2 class="mb-3 text-capitalize">{{ $service->title}}</h2>
                     <ul class="list-inline breadcrumbs text-capitalize" style="font-weight:500">
-                        <li class="list-inline-item"><a  wire:navigate  href="{{route('home')}}">Home</a>
+                        <li class="list-inline-item"><a wire:navigate href="{{route('home')}}">Home</a>
                         </li>
-                        <li class="list-inline-item">/ &nbsp; <a href="">Services</a>
+                        <li class="list-inline-item">/ &nbsp; <a wire:navigate href="{{ route('servicesPage')}}">Services</a>
+                        </li>
+                        <li class="list-inline-item">/ &nbsp; {{ $service->title}}
                         </li>
                     </ul>
                 </div>
@@ -34,19 +36,15 @@
         </div>
     </section>
     
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <div class="row justify-content-center">
-                @if($services->isNotEmpty())
-                @php
-                    $x=1
-                @endphp
-                @foreach($services as $service)
-                <div class="icon-box-item text-center col-lg-4 col-md-6 mb-4">
-                    <x-service-page-card :service="$service" />
+            <div class="row g-5">
+                
+                <div class="col-lg-12">
+                    <div>
+                        {!! $service->desciption !!}
+                    </div>
                 </div>
-                @endforeach
-                @endif
             </div>
         </div>
     </section>
